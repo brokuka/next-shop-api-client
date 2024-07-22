@@ -1,6 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ["@unocss/nuxt"],
-	css: ['@unocss/reset/tailwind.css']
+
+	css: [
+		'@unocss/reset/tailwind.css',
+	],
+
+	features: {
+		inlineStyles: false,
+	},
+
+	modules: ['@nuxt/eslint', '@unocss/nuxt', 'shadcn-nuxt'],
+
+	eslint: {
+		config: {
+			standalone: false,
+		},
+	},
 })
