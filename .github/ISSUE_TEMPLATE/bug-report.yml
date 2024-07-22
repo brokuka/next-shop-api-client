@@ -1,0 +1,35 @@
+name: 🐞 Bug report
+title: '🐞 - '
+description: Сообщить об ошибке чтобы помочь улучшить проект.
+labels: [pending triage]
+
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Описание
+      description: Простыми и понятными словами опишите баг, если хотите создать ПР для фикса этого бага, то напишите об этом в описании.
+      placeholder: Это было поздно вечером..
+
+  - type: checkboxes
+    id: browser-specific
+    attributes:
+      label: Какие браузеры вы использовали?
+      description: Вы можете выбрать более одного.
+      options:
+        - label: Chrome
+        - label: Firefox
+        - label: Safari
+        - label: Edge
+
+  - type: checkboxes
+    id: operating-systems
+    attributes:
+      label: Какие операционные системы вы использовали?
+      description: Вы можете выбрать более одного.
+      options:
+        - label: macOS
+        - label: Windows
+        - label: Linux
+        - label: iOS
+        - label: Android
