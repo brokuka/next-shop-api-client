@@ -7,9 +7,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAnimations(),
-    presetShadcn({
-      color: 'blue',
-    }),
+    presetShadcn(),
     presetWebFonts({
       provider: 'google',
       fonts: {
@@ -28,6 +26,38 @@ export default defineConfig({
         // include js/ts files
         'components/**/*.{js,ts}',
       ],
+    },
+  },
+  theme: {
+    colors: {
+      base: {
+        100: '#FFFFFF',
+        200: '#E8EDED',
+      },
+      neutral: {
+        50: '#F7F7F7',
+        100: '#E8EAEE',
+        200: '#D5D9D9',
+        300: '#BBC3C4',
+        400: '#A4ABAC',
+        500: '#848B8C',
+        600: '#7A8486',
+        700: '#525E60',
+        800: '#373D3E',
+        900: '#202425',
+      },
+      blue: {
+        100: '#E5F0FF',
+        200: '#C2DBFF',
+        500: '#2B69BE',
+        600: '#1752A2',
+        700: '#0C4088',
+      },
+			red: {
+				600: '#EE4343',
+				700: '#E31717',
+				800: '#C00000',
+			}
     },
   },
 })
