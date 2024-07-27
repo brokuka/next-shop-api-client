@@ -17,6 +17,9 @@ importers:
       '@unocss/reset':
         specifier: ^0.60.3
         version: 0.60.3
+      '@vueuse/core':
+        specifier: ^10.11.0
+        version: 10.11.0(vue@3.4.27(typescript@5.5.3))
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -4833,17 +4836,6 @@ packages:
   vue-bundle-renderer@2.1.0:
     resolution: {integrity: sha512-uZ+5ZJdZ/b43gMblWtcpikY6spJd0nERaM/1RtgioXNfWFbjKlUwrS8HlrddN6T2xtptmOouWclxLUkpgcVX3Q==}
 
-  vue-demi@0.14.7:
-    resolution: {integrity: sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==}
-    engines: {node: '>=12'}
-    hasBin: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-
   vue-demi@0.14.8:
     resolution: {integrity: sha512-Uuqnk9YE9SsWeReYqK2alDI5YzciATE0r2SkA6iMAtuXvNTMNACJLJEXNXaEy94ECuBe4Sk6RzRU80kjdbIo1Q==}
     engines: {node: '>=12'}
@@ -5574,7 +5566,7 @@ snapshots:
     dependencies:
       '@floating-ui/dom': 1.6.8
       '@floating-ui/utils': 0.2.5
-      vue-demi: 0.14.7(vue@3.4.27(typescript@5.5.3))
+      vue-demi: 0.14.8(vue@3.4.27(typescript@5.5.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -6979,7 +6971,7 @@ snapshots:
       '@unocss/reset': 0.60.3
       '@vue/devtools-shared': 7.2.1
       '@vueuse/components': 10.10.0(vue@3.4.27(typescript@5.5.3))
-      '@vueuse/core': 10.10.0(vue@3.4.27(typescript@5.5.3))
+      '@vueuse/core': 10.11.0(vue@3.4.27(typescript@5.5.3))
       '@vueuse/integrations': 10.10.0(focus-trap@7.5.4)(vue@3.4.27(typescript@5.5.3))
       colord: 2.9.3
       floating-vue: 5.2.2(@nuxt/kit@3.11.2(rollup@4.18.0))(vue@3.4.27(typescript@5.5.3))
@@ -7040,7 +7032,7 @@ snapshots:
     dependencies:
       '@vueuse/core': 10.10.0(vue@3.4.27(typescript@5.5.3))
       '@vueuse/shared': 10.10.0(vue@3.4.27(typescript@5.5.3))
-      vue-demi: 0.14.7(vue@3.4.27(typescript@5.5.3))
+      vue-demi: 0.14.8(vue@3.4.27(typescript@5.5.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -7050,7 +7042,7 @@ snapshots:
       '@types/web-bluetooth': 0.0.20
       '@vueuse/metadata': 10.10.0
       '@vueuse/shared': 10.10.0(vue@3.4.27(typescript@5.5.3))
-      vue-demi: 0.14.7(vue@3.4.27(typescript@5.5.3))
+      vue-demi: 0.14.8(vue@3.4.27(typescript@5.5.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -7069,7 +7061,7 @@ snapshots:
     dependencies:
       '@vueuse/core': 10.10.0(vue@3.4.27(typescript@5.5.3))
       '@vueuse/shared': 10.10.0(vue@3.4.27(typescript@5.5.3))
-      vue-demi: 0.14.7(vue@3.4.27(typescript@5.5.3))
+      vue-demi: 0.14.8(vue@3.4.27(typescript@5.5.3))
     optionalDependencies:
       focus-trap: 7.5.4
     transitivePeerDependencies:
@@ -7082,7 +7074,7 @@ snapshots:
 
   '@vueuse/shared@10.10.0(vue@3.4.27(typescript@5.5.3))':
     dependencies:
-      vue-demi: 0.14.7(vue@3.4.27(typescript@5.5.3))
+      vue-demi: 0.14.8(vue@3.4.27(typescript@5.5.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -10612,10 +10604,6 @@ snapshots:
   vue-bundle-renderer@2.1.0:
     dependencies:
       ufo: 1.5.3
-
-  vue-demi@0.14.7(vue@3.4.27(typescript@5.5.3)):
-    dependencies:
-      vue: 3.4.27(typescript@5.5.3)
 
   vue-demi@0.14.8(vue@3.4.27(typescript@5.5.3)):
     dependencies:
