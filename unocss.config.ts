@@ -58,5 +58,19 @@ export default defineConfig({
         900: '#042654',
       },
     },
+    fontSize: {
+      xs: ['12px', '20px'],
+      sm: ['14px', '20px'],
+      base: ['16px', '24px'],
+      md: '18px',
+      lg: ['20px', {
+        lineHeight: '28px',
+        fontWeight: '600',
+      }],
+      xl: ['24px', {
+        lineHeight: '32px',
+        fontWeight: '700',
+      }],
+    },
   },
 })
