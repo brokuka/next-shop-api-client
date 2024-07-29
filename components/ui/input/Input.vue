@@ -12,6 +12,7 @@ const props = defineProps<{
   modelValue?: string | number
   class?: HTMLAttributes['class']
   hint?: string
+  label?: string
 }>()
 
 const emits = defineEmits<{
@@ -24,10 +25,16 @@ const modelValue = useVModel(props, 'modelValue', emits, {
   passive: true,
   defaultValue: props.defaultValue,
 })
+
+const Label = resolveComponent('Label')
 </script>
 
 <template>
-  <div class="flex flex-col gap-1.5">
+  <component :is="label ? Label : 'div'" class="flex flex-col gap-1.5">
+    <template v-if="label">
+      {{ label }}
+    </template>
+
     <input
       v-model="modelValue"
       :class="cn('flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-neutral-100 disabled:cursor-not-allowed disabled:opacity-50', props.class)"
@@ -35,5 +42,5 @@ const modelValue = useVModel(props, 'modelValue', emits, {
     >
 
     <span v-if="hint" :class="cn('text-sm text-neutral-600', { 'text-neutral-300': attrs.disabled })">{{ hint }}</span>
-  </div>
+  </component>
 </template>
