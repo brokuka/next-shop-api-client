@@ -41,6 +41,6 @@ const Label = resolveComponent('Label')
       v-bind="attrs"
     >
 
-    <span v-if="hint" :class="cn('text-sm text-neutral-600', { 'text-neutral-300': attrs.disabled })">{{ hint }}</span>
+    <span v-if="hint" :class="cn('text-sm text-neutral-600 font-normal', { 'text-neutral-300': attrs.disabled })">{{ hint }}</span>
   </component>
 </template>
