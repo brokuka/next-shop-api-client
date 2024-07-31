@@ -10,11 +10,17 @@ export default defineNuxtConfig({
     inlineStyles: false,
   },
 
-  modules: ['@nuxt/eslint', '@unocss/nuxt', 'shadcn-nuxt', "@nuxt/icon"],
+  modules: ['@nuxt/eslint', '@unocss/nuxt', 'shadcn-nuxt', '@nuxt/icon'],
 
   eslint: {
     config: {
       standalone: false,
     },
   },
+
+  icon: {
+    serverBundle: 'local',
+  },
+
+  compatibilityDate: '2024-08-01',
 })

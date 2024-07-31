@@ -16,7 +16,7 @@ importers:
         version: 1.4.3(magicast@0.3.4)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))(vue@3.4.35(typescript@5.5.4))
       '@unocss/nuxt':
         specifier: ^0.61.9
-        version: 0.61.9(magicast@0.3.4)(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))(webpack@5.91.0(esbuild@0.21.5))
+        version: 0.61.9(magicast@0.3.4)(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))(webpack@5.91.0(esbuild@0.23.0))
       '@unocss/reset':
         specifier: ^0.61.9
         version: 0.61.9
@@ -43,7 +43,7 @@ importers:
         version: 2.4.0
       unocss:
         specifier: ^0.61.9
-        version: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
+        version: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
       vue:
         specifier: ^3.4.35
         version: 3.4.35(typescript@5.5.4)
@@ -54,6 +54,9 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.24.0
         version: 2.24.0(@unocss/eslint-plugin@0.61.9(eslint@9.8.0)(typescript@5.5.4))(@vue/compiler-sfc@3.4.35)(eslint-plugin-format@0.1.2(eslint@9.8.0))(eslint@9.8.0)(typescript@5.5.4)
+      '@iconify-json/material-symbols':
+        specifier: ^1.1.85
+        version: 1.1.85
       '@unocss/eslint-config':
         specifier: ^0.61.9
         version: 0.61.9(eslint@9.8.0)(typescript@5.5.4)
@@ -71,10 +74,10 @@ importers:
         version: 5.5.4
       unocss-preset-animations:
         specifier: ^1.1.0
-        version: 1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)))
+        version: 1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)))
       unocss-preset-shadcn:
         specifier: ^0.3.1
-        version: 0.3.1(unocss-preset-animations@1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))))(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)))
+        version: 0.3.1(unocss-preset-animations@1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))))(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)))
       vue-tsc:
         specifier: ^2.0.29
         version: 2.0.29(typescript@5.5.4)
@@ -816,6 +819,9 @@ packages:
   '@humanwhocodes/retry@0.3.0':
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/material-symbols@1.1.85':
+    resolution: {integrity: sha512-GJXTScAIdaxxMPcp6GCd4qbntvHpG9UrF/2V03PMUuD7+1fMU5vHG5w0IGDdvqOnI9HpEcUFa7CFDVQHOpBeDA==}
 
   '@iconify/collections@1.0.444':
     resolution: {integrity: sha512-3+dA5B8vs+qew23dwBAqv6M4LqtOHlYQiKCproN5o3lLelnA1fnWJMfv5f2RyPecaS9rZEGi1+eg8AFKF2sk1A==}
@@ -4908,7 +4914,7 @@ snapshots:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
       '@stylistic/eslint-plugin': 2.6.0-beta.1(eslint@9.8.0)(typescript@5.5.4)
-      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
+      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
       '@typescript-eslint/parser': 8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4)
       eslint: 9.8.0
       eslint-config-flat-gitignore: 0.1.8
@@ -4927,8 +4933,8 @@ snapshots:
       eslint-plugin-regexp: 2.6.0(eslint@9.8.0)
       eslint-plugin-toml: 0.11.1(eslint@9.8.0)
       eslint-plugin-unicorn: 55.0.0(eslint@9.8.0)
-      eslint-plugin-unused-imports: 4.0.1(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)
-      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
+      eslint-plugin-unused-imports: 4.0.1(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)
+      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
       eslint-plugin-vue: 9.27.0(eslint@9.8.0)
       eslint-plugin-yml: 1.14.0(eslint@9.8.0)
       eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.4.35)(eslint@9.8.0)
@@ -5534,6 +5540,10 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.0': {}
+
+  '@iconify-json/material-symbols@1.1.85':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.444':
     dependencies:
@@ -6343,10 +6353,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)':
+  '@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)':
     dependencies:
       '@eslint-community/regexpp': 4.11.0
-      '@typescript-eslint/parser': 8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4)
+      '@typescript-eslint/parser': 7.18.0(eslint@9.8.0)(typescript@5.5.4)
       '@typescript-eslint/scope-manager': 8.0.0-alpha.40
       '@typescript-eslint/type-utils': 8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4)
       '@typescript-eslint/utils': 8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4)
@@ -6622,7 +6632,7 @@ snapshots:
       gzip-size: 6.0.0
       sirv: 2.0.4
 
-  '@unocss/nuxt@0.61.9(magicast@0.3.4)(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))(webpack@5.91.0(esbuild@0.21.5))':
+  '@unocss/nuxt@0.61.9(magicast@0.3.4)(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))(webpack@5.91.0(esbuild@0.23.0))':
     dependencies:
       '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.18.0)
       '@unocss/config': 0.61.9
@@ -6636,8 +6646,8 @@ snapshots:
       '@unocss/preset-wind': 0.61.9
       '@unocss/reset': 0.61.9
       '@unocss/vite': 0.61.9(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
-      '@unocss/webpack': 0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5))
-      unocss: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
+      '@unocss/webpack': 0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0))
+      unocss: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
     transitivePeerDependencies:
       - magicast
       - postcss
@@ -6756,7 +6766,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5))':
+  '@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.18.0)
@@ -6766,7 +6776,7 @@ snapshots:
       fast-glob: 3.3.2
       magic-string: 0.30.11
       unplugin: 1.12.0
-      webpack: 5.91.0(esbuild@0.21.5)
+      webpack: 5.91.0(esbuild@0.23.0)
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - rollup
@@ -7961,19 +7971,19 @@ snapshots:
       semver: 7.6.3
       strip-indent: 3.0.0
 
-  eslint-plugin-unused-imports@4.0.1(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0):
+  eslint-plugin-unused-imports@4.0.1(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0):
     dependencies:
       eslint: 9.8.0
       eslint-rule-composer: 0.3.0
     optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
+      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
 
-  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4):
+  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4):
     dependencies:
       '@typescript-eslint/utils': 7.18.0(eslint@9.8.0)(typescript@5.5.4)
       eslint: 9.8.0
     optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@8.0.0-alpha.40(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
+      '@typescript-eslint/eslint-plugin': 8.0.0-alpha.40(@typescript-eslint/parser@7.18.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -9945,16 +9955,16 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  terser-webpack-plugin@5.3.10(esbuild@0.21.5)(webpack@5.91.0(esbuild@0.21.5)):
+  terser-webpack-plugin@5.3.10(esbuild@0.23.0)(webpack@5.91.0(esbuild@0.23.0)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.31.0
-      webpack: 5.91.0(esbuild@0.21.5)
+      webpack: 5.91.0(esbuild@0.23.0)
     optionalDependencies:
-      esbuild: 0.21.5
+      esbuild: 0.23.0
 
   terser@5.31.0:
     dependencies:
@@ -10104,17 +10114,17 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss-preset-animations@1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))):
+  unocss-preset-animations@1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))):
     dependencies:
       '@unocss/preset-wind': 0.61.9
-      unocss: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
+      unocss: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
 
-  unocss-preset-shadcn@0.3.1(unocss-preset-animations@1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))))(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))):
+  unocss-preset-shadcn@0.3.1(unocss-preset-animations@1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))))(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))):
     dependencies:
-      unocss: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
-      unocss-preset-animations: 1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)))
+      unocss: 0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
+      unocss-preset-animations: 1.1.0(@unocss/preset-wind@0.61.9)(unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)))
 
-  unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)):
+  unocss@0.61.9(@unocss/webpack@0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0)))(postcss@8.4.40)(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0)):
     dependencies:
       '@unocss/astro': 0.61.9(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
       '@unocss/cli': 0.61.9(rollup@4.18.0)
@@ -10137,7 +10147,7 @@ snapshots:
       '@unocss/transformer-variant-group': 0.61.9
       '@unocss/vite': 0.61.9(rollup@4.18.0)(vite@5.3.5(@types/node@20.12.12)(terser@5.31.0))
     optionalDependencies:
-      '@unocss/webpack': 0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.21.5))
+      '@unocss/webpack': 0.61.9(rollup@4.18.0)(webpack@5.91.0(esbuild@0.23.0))
       vite: 5.3.5(@types/node@20.12.12)(terser@5.31.0)
     transitivePeerDependencies:
       - postcss
@@ -10410,7 +10420,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.91.0(esbuild@0.21.5):
+  webpack@5.91.0(esbuild@0.23.0):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.5
@@ -10433,7 +10443,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.21.5)(webpack@5.91.0(esbuild@0.21.5))
+      terser-webpack-plugin: 5.3.10(esbuild@0.23.0)(webpack@5.91.0(esbuild@0.23.0))
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:

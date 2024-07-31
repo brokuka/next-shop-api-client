@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.0",
+    "@iconify-json/material-symbols": "^1.1.85",
     "@unocss/eslint-config": "^0.61.9",
     "eslint": "^9.8.0",
     "eslint-plugin-format": "^0.1.2",

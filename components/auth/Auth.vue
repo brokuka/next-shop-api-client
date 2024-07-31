@@ -76,7 +76,10 @@ watch(reactiveQuery, (newValue) => {
       </CardHeader>
 
       <CardContent>
-        <Tabs v-if="isLoginOrRegister" class="flex flex-col gap-6" :model-value="to" @update:model-value="onUpdateTab">
+        <Tabs
+          v-if="isLoginOrRegister" class="flex flex-col gap-6" :model-value="to"
+          @update:model-value="onUpdateTab"
+        >
           <TabsList class="self-center">
             <TabsTrigger value="register">
               Создать аккаунт
