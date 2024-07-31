@@ -29,12 +29,13 @@ const INPUT_GROUP: AuthInput[] = [
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
+  <form class="flex flex-col gap-4" @submit.prevent>
     <Input
       v-for="input in INPUT_GROUP" :id="input.id" :key="input.id" :type="input.type"
       :placeholder="input.placeholder" :hint="input.hint" :disabled="input.disabled" :label="input.label"
+      :autocomplete="input.id"
     />
-  </div>
+  </form>
 
   <div class="text-center">
     <Button class="my-6">
