@@ -37,7 +37,7 @@ const Label = resolveComponent('Label')
 
     <input
       v-model="modelValue"
-      :class="cn('flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-neutral-100 disabled:cursor-not-allowed disabled:opacity-50', props.class)"
+      :class="cn('flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-neutral-400 focus-visible:(outline-none focus-visible:ring-2 ring-ring ring-offset-2) font-normal disabled:(bg-neutral-100 cursor-not-allowed opacity-50)', props.class)"
       v-bind="attrs"
     >
 
