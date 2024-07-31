@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const emit = defineEmits<{
+  reset: []
+}>()
+
 const INPUT_GROUP: AuthInput[] = [
   {
     id: 'email',
@@ -14,10 +18,8 @@ const INPUT_GROUP: AuthInput[] = [
   },
 ]
 
-const isClickedResetPassword = defineModel('clickResetPassword')
-
 function onClickResetPassword() {
-  isClickedResetPassword.value = !isClickedResetPassword.value
+  emit('reset')
 }
 </script>
 
