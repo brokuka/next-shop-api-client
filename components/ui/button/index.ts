@@ -7,12 +7,14 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-blue-600 text-base-100 hover:bg-blue-700 text-sm font-medium min-w-[204px] active:bg-blue-800 focus-visible:bg-blue-700 disabled:(bg-neutral-100 text-neutral-400)',
+        default: 'bg-blue-600 text-base-100 hover:bg-blue-700 text-sm font-medium active:bg-blue-800 focus-visible:bg-blue-700 disabled:(bg-neutral-100 text-neutral-400)',
         link: 'hover:underline underline-offset-3 text-blue-600 text-xs',
+        ghost: 'bg-none',
       },
       size: {
-        default: 'h-10 px-4 py-2',
+        default: 'h-10 px-4 py-2 min-w-[204px]',
         link: 'p-0',
+        icon: 'h-10 w-10',
       },
     },
     defaultVariants: {
