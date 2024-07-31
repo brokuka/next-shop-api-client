@@ -33,7 +33,7 @@ const INPUT_GROUP: AuthInput[] = [
     <Input
       v-for="input in INPUT_GROUP" :id="input.id" :key="input.id" :type="input.type"
       :placeholder="input.placeholder" :hint="input.hint" :disabled="input.disabled" :label="input.label"
-      :autocomplete="input.id"
+      :autocomplete="input.id" :toggle-mask="input.type === 'password'"
     />
   </form>
 
