@@ -42,9 +42,13 @@ const INPUT_GROUP: AuthInput[] = [
       Создать аккаунт
     </Button>
 
-    <span class="inline-block text-xs text-neutral-600 lh-tight">Регистрируясь, Вы присоединяетесь к
-      Правилам работы
-      магазина и подтверждаете, что ознакомлены с
-      Политикой конфиденциальности.</span>
+    <span class="inline-block text-xs text-neutral-600">Регистрируясь, Вы присоединяетесь к
+      <Button variant="link" size="link">
+        Правилам работы
+        магазина
+      </Button> и подтверждаете, что ознакомлены с
+      <Button variant="link" size="link">
+        Политикой конфиденциальности
+      </Button>.</span>
   </div>
 </template>
