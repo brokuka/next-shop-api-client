@@ -12,7 +12,6 @@ const delegatedProps = computed(() => {
 })
 
 const forwardedProps = useForwardProps(delegatedProps)
-// data-[state=active]:shadow-sm
 </script>
 
 <template>
