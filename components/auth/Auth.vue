@@ -67,53 +67,50 @@ watch(reactiveQuery, (newValue) => {
 </script>
 
 <template>
-  <Card class="relative max-w-[670px] w-full flex justify-center px-4 py-10">
-    <div class="w-[360px]">
-      <CardHeader :class="cn('mb-4', { 'mb-6': !isLoginOrRegister })">
-        <CardTitle class="text-center text-blue-700 font-semibold">
+  <AlertDialog class="relative flex justify-center px-4 py-10" default-open>
+    <AlertDialogContent @escape-key-down.prevent>
+      <AlertDialogHeader :class="cn('mb-4', { 'mb-6': !isLoginOrRegister })">
+        <AlertDialogTitle class="text-center text-blue-700 font-semibold">
           Регистрация и вход
-        </CardTitle>
-      </CardHeader>
+        </AlertDialogTitle>
+      </AlertDialogHeader>
 
-      <CardContent>
-        <Tabs
-          v-if="isLoginOrRegister" class="flex flex-col gap-6" :model-value="to"
-          @update:model-value="onUpdateTab"
-        >
-          <TabsList class="self-center">
-            <TabsTrigger value="register">
-              Создать аккаунт
-            </TabsTrigger>
+      <Tabs
+        v-if="isLoginOrRegister" class="max-w-[360px] w-full flex flex-col gap-6" :model-value="to"
+        @update:model-value="onUpdateTab"
+      >
+        <TabsList class="self-center">
+          <TabsTrigger value="register">
+            Создать аккаунт
+          </TabsTrigger>
 
-            <TabsTrigger value="login">
-              Войти
-            </TabsTrigger>
-          </TabsList>
+          <TabsTrigger value="login">
+            Войти
+          </TabsTrigger>
+        </TabsList>
 
-          <TabsContent value="register">
-            <AuthRegister />
-          </TabsContent>
+        <TabsContent value="register">
+          <AuthRegister />
+        </TabsContent>
 
-          <TabsContent value="login">
-            <AuthLogin @reset="goToResetPasswordScreen" />
-          </TabsContent>
-        </Tabs>
+        <TabsContent value="login">
+          <AuthLogin @reset="goToResetPasswordScreen" />
+        </TabsContent>
+      </Tabs>
 
-        <template v-else>
-          <Button
-            class="absolute left-5 top-5" size="icon" variant="ghost" aria-label="Назад"
-            @click="backToLoginScreen"
-          >
-            <Icon class="h-6 w-6 text-neutral-500" name="material-symbols:arrow-left-alt-rounded" />
-          </Button>
+      <template v-else>
+        <Button class="absolute left-5 top-5" size="icon" variant="ghost" aria-label="Назад" @click="backToLoginScreen">
+          <Icon class="h-6 w-6 text-neutral-500" name="material-symbols:arrow-left-alt-rounded" />
+        </Button>
 
-          <AuthResetPassword />
-        </template>
+        <AuthResetPassword />
+      </template>
 
+      <AlertDialogCancel as-child>
         <Button class="absolute right-5 top-5" size="icon" variant="ghost" aria-label="Закрыть" @click="closeAuth">
           <Icon class="h-6 w-6 text-neutral-500" name="material-symbols:close" />
         </Button>
-      </CardContent>
-    </div>
-  </Card>
+      </AlertDialogCancel>
+    </AlertDialogContent>
+  </AlertDialog>
 </template>
