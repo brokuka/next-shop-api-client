@@ -67,16 +67,18 @@ watch(reactiveQuery, (newValue) => {
 </script>
 
 <template>
-  <AlertDialog class="relative flex justify-center px-4 py-10" default-open>
+  <AlertDialog default-open>
     <AlertDialogContent @escape-key-down.prevent>
-      <AlertDialogHeader :class="cn('mb-4', { 'mb-6': !isLoginOrRegister })">
+      <AlertDialogHeader :class="cn({ 'mb-6': !isLoginOrRegister })">
         <AlertDialogTitle class="text-center text-blue-700 font-semibold">
           Регистрация и вход
         </AlertDialogTitle>
+
+        <AlertDialogDescription class="hidden" />
       </AlertDialogHeader>
 
       <Tabs
-        v-if="isLoginOrRegister" class="max-w-[360px] w-full flex flex-col gap-6" :model-value="to"
+        v-if="isLoginOrRegister" :class="cn('max-w-[360px] w-full flex flex-col gap-6')" :model-value="to"
         @update:model-value="onUpdateTab"
       >
         <TabsList class="self-center">
@@ -103,7 +105,7 @@ watch(reactiveQuery, (newValue) => {
           <Icon class="h-6 w-6 text-neutral-500" name="material-symbols:arrow-left-alt-rounded" />
         </Button>
 
-        <AuthResetPassword />
+        <AuthResetPassword class="max-w-[360px] w-full" />
       </template>
 
       <AlertDialogCancel as-child>
