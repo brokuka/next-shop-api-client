@@ -7,9 +7,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAnimations(),
-    presetShadcn({
-      color: 'blue',
-    }),
+    presetShadcn(),
     presetWebFonts({
       provider: 'google',
       fonts: {
