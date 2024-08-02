@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.0.4+sha256.caa915eaae9d9aefccf50ee8aeda25a2f8684d8f9d5c6e367eaf176d97c1f89e",
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -13,28 +13,31 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.3.13",
-    "@unocss/nuxt": "^0.60.3",
-    "@unocss/reset": "^0.60.3",
+    "@nuxt/eslint": "^0.4.0",
+    "@nuxt/icon": "^1.4.3",
+    "@unocss/nuxt": "^0.61.9",
+    "@unocss/reset": "^0.61.9",
+    "@vueuse/core": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-vue-next": "^0.414.0",
-    "nuxt": "^3.11.2",
+    "lucide-vue-next": "^0.418.0",
+    "nuxt": "^3.12.4",
     "radix-vue": "^1.9.2",
     "tailwind-merge": "^2.4.0",
-    "unocss": "^0.60.3",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "unocss": "^0.61.9",
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.19.0",
-    "@unocss/eslint-config": "^0.61.5",
-    "eslint": "^9.7.0",
+    "@antfu/eslint-config": "^2.24.0",
+    "@iconify-json/material-symbols": "^1.1.85",
+    "@unocss/eslint-config": "^0.61.9",
+    "eslint": "^9.8.0",
     "eslint-plugin-format": "^0.1.2",
     "shadcn-nuxt": "^0.10.4",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "unocss-preset-animations": "^1.1.0",
     "unocss-preset-shadcn": "^0.3.1",
-    "vue-tsc": "^2.0.28"
+    "vue-tsc": "^2.0.29"
   }
 }
