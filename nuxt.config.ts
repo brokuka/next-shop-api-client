@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2024-08-01',
+
   devtools: { enabled: true },
 
   css: [
@@ -10,7 +12,7 @@ export default defineNuxtConfig({
     inlineStyles: false,
   },
 
-  modules: ['@nuxt/eslint', '@unocss/nuxt', 'shadcn-nuxt', '@nuxt/icon'],
+  modules: ['@nuxt/eslint', '@unocss/nuxt', 'shadcn-nuxt', '@nuxt/icon', '@nuxt/fonts'],
 
   eslint: {
     config: {
@@ -22,5 +24,12 @@ export default defineNuxtConfig({
     serverBundle: 'local',
   },
 
-  compatibilityDate: '2024-08-01',
+  fonts: {
+    families: [
+      {
+        name: 'Inter',
+        preload: true,
+      },
+    ],
+  },
 })

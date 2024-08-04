@@ -1,4 +1,4 @@
-import { defineConfig, presetUno, presetWebFonts, transformerVariantGroup } from 'unocss'
+import { defineConfig, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 import presetAnimations from 'unocss-preset-animations'
 import { presetShadcn } from 'unocss-preset-shadcn'
@@ -10,15 +10,10 @@ export default defineConfig({
     presetShadcn({
       color: 'blue',
     }),
-    presetWebFonts({
-      provider: 'google',
-      fonts: {
-        mono: ['Inter:400,500'],
-      },
-    }),
   ],
   transformers: [
     transformerVariantGroup(),
+    transformerDirectives(),
   ],
   content: {
     pipeline: {
@@ -31,6 +26,9 @@ export default defineConfig({
     },
   },
   theme: {
+    fontFamily: {
+      mono: 'Inter',
+    },
     colors: {
       base: {
         100: '#FFFFFF',

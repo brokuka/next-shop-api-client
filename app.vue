@@ -11,3 +11,9 @@ const useIdFunction = () => useId()
     </NuxtLayout>
   </ConfigProvider>
 </template>
+
+<style>
+body {
+	@apply font-mono;
+}
+</style>
